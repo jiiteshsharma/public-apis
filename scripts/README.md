@@ -40,7 +40,7 @@ From the repository root, run link validation on `README.md`:
 $ python scripts/validate/links.py README.md
 ```
 
-As there are many links to check, this process can take some time. If your goal is not to check if the links are working, you can only check for duplicate links. Run:
+The full link validation checks for duplicate URLs and makes network requests to test links, so it can take some time. To check only for duplicate URLs without making requests to the linked websites, run:
 
 ```bash
 $ python scripts/validate/links.py README.md -odlc

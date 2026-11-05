@@ -20,7 +20,7 @@ scripts
 
 You must have [python](https://www.python.org/) installed to use these scripts.
 
-it is also necessary to install the validation package dependencies, use [pip package manager](https://pypi.org/project/pip/) for this:
+Install the validation package dependencies with [pip](https://pypi.org/project/pip/):
 
 ```bash
 $ python -m pip install -r scripts/requirements.txt
@@ -28,13 +28,13 @@ $ python -m pip install -r scripts/requirements.txt
 
 ## Run validations
 
-To run format validation on the `README.md` file, being in the root directory of public-apis, run:
+From the `public-apis` repository root, run format validation on `README.md`:
 
 ```bash
 $ python scripts/validate/format.py README.md
 ```
 
-To run link validation on the `README.md` file, being in the root directory of public-apis, run:
+From the repository root, run link validation on `README.md`:
 
 ```bash
 $ python scripts/validate/links.py README.md
@@ -56,7 +56,7 @@ To run all tests it is necessary to change to the scripts directory:
 $ cd scripts
 ```
 
-then run:
+Then run:
 
 ```bash
 $ python -m unittest discover tests/ --verbose
